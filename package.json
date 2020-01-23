@@ -11,6 +11,10 @@
     "type": "git",
     "url": "git+https://github.com/chaitanyachandla10/Dice_roll.git"
   },
+  "keywords": [
+    "dice",
+    "heroku"
+  ],
   "author": "Chaitanya Chandla",
   "license": "ISC",
   "bugs": {
