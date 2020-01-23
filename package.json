@@ -1,0 +1,32 @@
+{
+  "name": "dice_roll",
+  "version": "1.0.0",
+  "description": "The Two dice roll and 2 players which player first cross 500 is the winner ",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaitanyachandla10/Dice_roll.git"
+  },
+  "author": "Chaitanya Chandla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaitanyachandla10/Dice_roll/issues"
+  },
+  "homepage": "https://github.com/chaitanyachandla10/Dice_roll#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-static-gzip": "^2.0.6",
+    "fs": "^0.0.1-security",
+    "google-crawler": "^0.1.0",
+    "https": "^1.0.0",
+    "mongoose": "^5.8.9",
+    "nodemailer": "^6.4.2",
+    "nodemon": "^2.0.2",
+    "path": "^0.12.7",
+    "pm2": "^4.2.3"
+  }
+}
