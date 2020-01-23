@@ -8,6 +8,7 @@ var https = require("https");
 var http=require('http');
 var nodemailer = require("nodemailer");
 var mongoose = require("mongoose");
+
 myapp.use(expressStaticGzip
     (__dirname + '/public',
         {
@@ -17,7 +18,7 @@ myapp.use(expressStaticGzip
 );
 myapp.use(express.static(__dirname + '/public'));
 
-myapp.listen(5100,function()
+myapp.listen(8080,function()
 {
 	console.log('server is running');
 });
