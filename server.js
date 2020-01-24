@@ -1,14 +1,14 @@
-var express = require('express');
+const express = require('express');
 myapp = express();
-var expressStaticGzip = require("express-static-gzip");
-var google_crawler = require("google-crawler");
-var path	= require("path");
-var fs = require("fs");
-var https = require("https");
-var http=require('http');
-var nodemailer = require("nodemailer");
-var mongoose = require("mongoose");
-
+const expressStaticGzip = require("express-static-gzip");
+const google_crawler = require("google-crawler");
+const path	= require("path");
+const fs = require("fs");
+const https = require("https");
+const http=require('http');
+const nodemailer = require("nodemailer");
+const mongoose = require("mongoose");
+const port = 5100
 myapp.use(expressStaticGzip
     (__dirname + '/public',
         {
@@ -18,10 +18,9 @@ myapp.use(expressStaticGzip
 );
 myapp.use(express.static(__dirname + '/public'));
 
-myapp.listen(8080,function()
-{
-	console.log('server is running');
-});
-
+http.createServer(myapp).listen(80,function()
+	{
+		console.log("https is running");
+	});
 
 
